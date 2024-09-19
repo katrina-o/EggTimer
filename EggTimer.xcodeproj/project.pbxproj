@@ -10,9 +10,10 @@
 		46F0B6302C218B2200D6D9F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0B62F2C218B2200D6D9F3 /* AppDelegate.swift */; };
 		46F0B6322C218B2200D6D9F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0B6312C218B2200D6D9F3 /* SceneDelegate.swift */; };
 		46F0B6342C218B2200D6D9F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0B6332C218B2200D6D9F3 /* ViewController.swift */; };
-		46F0B6372C218B2200D6D9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F0B6352C218B2200D6D9F3 /* Main.storyboard */; };
 		46F0B6392C218B2300D6D9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F0B6382C218B2300D6D9F3 /* Assets.xcassets */; };
 		46F0B63C2C218B2300D6D9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F0B63A2C218B2300D6D9F3 /* LaunchScreen.storyboard */; };
+		46F0B6442C21939200D6D9F3 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46F0B6432C21939200D6D9F3 /* alarm_sound.mp3 */; };
+		F25DE7DFEDD72BE18C61F48E /* Pods_EggTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6272737FBADF2950E083939E /* Pods_EggTimer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,13 @@
 		46F0B62F2C218B2200D6D9F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F0B6312C218B2200D6D9F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46F0B6332C218B2200D6D9F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46F0B6362C218B2200D6D9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46F0B6382C218B2300D6D9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46F0B63B2C218B2300D6D9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F0B63D2C218B2300D6D9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F0B6432C21939200D6D9F3 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		6272737FBADF2950E083939E /* Pods_EggTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EggTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB45DC9816BD2556A156614 /* Pods-EggTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer.release.xcconfig"; path = "Target Support Files/Pods-EggTimer/Pods-EggTimer.release.xcconfig"; sourceTree = "<group>"; };
+		FEFFCCFEF598DFE721072D7B /* Pods-EggTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggTimer.debug.xcconfig"; path = "Target Support Files/Pods-EggTimer/Pods-EggTimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DE7DFEDD72BE18C61F48E /* Pods_EggTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FE6510F2665D1DF538FC88F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6272737FBADF2950E083939E /* Pods_EggTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46F0B6232C218B2200D6D9F3 = {
 			isa = PBXGroup;
 			children = (
 				46F0B62E2C218B2200D6D9F3 /* EggTimer */,
 				46F0B62D2C218B2200D6D9F3 /* Products */,
+				9ED7D052F2627111178F43E6 /* Pods */,
+				2FE6510F2665D1DF538FC88F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,24 @@
 		46F0B62E2C218B2200D6D9F3 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				46F0B6432C21939200D6D9F3 /* alarm_sound.mp3 */,
 				46F0B62F2C218B2200D6D9F3 /* AppDelegate.swift */,
 				46F0B6312C218B2200D6D9F3 /* SceneDelegate.swift */,
 				46F0B6332C218B2200D6D9F3 /* ViewController.swift */,
-				46F0B6352C218B2200D6D9F3 /* Main.storyboard */,
 				46F0B6382C218B2300D6D9F3 /* Assets.xcassets */,
 				46F0B63A2C218B2300D6D9F3 /* LaunchScreen.storyboard */,
 				46F0B63D2C218B2300D6D9F3 /* Info.plist */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		9ED7D052F2627111178F43E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFCCFEF598DFE721072D7B /* Pods-EggTimer.debug.xcconfig */,
+				EAB45DC9816BD2556A156614 /* Pods-EggTimer.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46F0B6402C218B2300D6D9F3 /* Build configuration list for PBXNativeTarget "EggTimer" */;
 			buildPhases = (
+				61BD7F444CE2127D03AAA2B0 /* [CP] Check Pods Manifest.lock */,
 				46F0B6282C218B2200D6D9F3 /* Sources */,
 				46F0B6292C218B2200D6D9F3 /* Frameworks */,
 				46F0B62A2C218B2200D6D9F3 /* Resources */,
+				4E57CA9132A6BF2F7CE027F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +152,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F0B63C2C218B2300D6D9F3 /* LaunchScreen.storyboard in Resources */,
+				46F0B6442C21939200D6D9F3 /* alarm_sound.mp3 in Resources */,
 				46F0B6392C218B2300D6D9F3 /* Assets.xcassets in Resources */,
-				46F0B6372C218B2200D6D9F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E57CA9132A6BF2F7CE027F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimer/Pods-EggTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EggTimer/Pods-EggTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EggTimer/Pods-EggTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61BD7F444CE2127D03AAA2B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EggTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46F0B6282C218B2200D6D9F3 /* Sources */ = {
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46F0B6352C218B2200D6D9F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46F0B6362C218B2200D6D9F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46F0B63A2C218B2300D6D9F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,17 +347,18 @@
 		};
 		46F0B6412C218B2300D6D9F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFFCCFEF598DFE721072D7B /* Pods-EggTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TLSFRK3N4G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EggTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,17 +376,18 @@
 		};
 		46F0B6422C218B2300D6D9F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB45DC9816BD2556A156614 /* Pods-EggTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TLSFRK3N4G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EggTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
